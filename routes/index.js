@@ -4,6 +4,8 @@ const express = require('express')
 const Scaledrone = require('scaledrone-node');
 const router = express.Router()
 const drone = new Scaledrone('ywbv2UbC8lPdqaH9');
+const moment = require('moment')
+
 
 const room = drone.subscribe('observable-beca');
 
@@ -43,9 +45,10 @@ router.post('/api/buy', function (request, response, next) {
   drone.publish({
     room: 'observable-beca',
     message: {
-      buyer: request.body.buyer,
-      product: request.body.product,
-      price: request.body.price
+      type: 'input',
+      title: `${request.body.product} - ${request.body.buyer}`,
+      date: moment().format('DD/MM/YYYY hh:mm'),
+      value: request.body.price
     }
   })
   response.send({
