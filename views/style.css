@@ -42,6 +42,7 @@ body {
   padding: 50px;
   border-radius: 20px;
 }
+
 .container .wrapper {
   margin: 0;
 }
@@ -78,24 +79,36 @@ body {
   padding: 10px;
 }
 .container .wrapper .info .buyBtn {
-  background: #9065fc;
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-transform: uppercase;
   margin-top: 20px;
-  padding: 15px 80px;
-  border-radius: 50px;
+  height: 110px;
+  width: 360px;
   cursor: pointer;
   transition: 300ms;
+  background-image: url(http://www.hustlermoneyblog.com/wp-content/uploads/2015/11/Visa-Checkout-Image.png);
+  background-size:100%;
+  background-repeat: no-repeat;
 }
 .container .wrapper .info .buyBtn:hover {
-  background: #9065fc;
-  color: white;
   transition: 300ms;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
  .container .wrapper{
    padding-top: 15px;
+ }
+
+ @media only screen and (max-device-width: 645px) {
+   .container {
+     max-width: 90%;
+   }
+   .container .wrapper .info .buyBtn {
+     margin-top: 20px;
+     height: 110px;
+     width: 90%;
+     cursor: pointer;
+     transition: 300ms;
+     background-image: url(http://www.hustlermoneyblog.com/wp-content/uploads/2015/11/Visa-Checkout-Image.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+   }
  }
