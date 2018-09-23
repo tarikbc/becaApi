@@ -39,7 +39,7 @@ router.get('/', (request, response) => {
   response.render('..views/')
 })
 
-router.post('/api/buy', function (req, res, next) {
+router.post('/api/buy', function (request, response, next) {
   drone.publish({
     room: 'observable-beca',
     message: {
@@ -47,7 +47,10 @@ router.post('/api/buy', function (req, res, next) {
       product: request.body.product,
       price: request.body.price
     }
-  });
+  })
+  response.send({
+    sent:true
+  })
 })
 
 router.get('/api/ping', (request, response) => {
