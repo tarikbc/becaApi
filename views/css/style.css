@@ -1,0 +1,77 @@
+*{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:Montserrat,sans-serif;
+}
+.container{
+	width:100%;
+	min-height: 300px;
+	height:100vh;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+	padding-left:15px;
+	padding-right:15px;
+	background:-webkit-gradient(linear,left top, right bottom,from(#FF4F4F),to(#AA2F5f));
+	background:-webkit-linear-gradient(top left,#FF4F4F,#AA2F5f);
+	background:-o-linear-gradient(top left,#FF4F4F,#AA2F5f);
+	background:linear-gradient(to bottom right,#FF4F4F,#AA2F5f)
+}
+@-webkit-keyframes pulsing{
+	0%,100%{
+			-webkit-transform:scale(1);
+			transform:scale(1)
+	}
+	50%{
+			-webkit-transform:scale(1.1);
+			transform:scale(1.1)
+	}
+}
+@keyframes pulsing{
+	0%,100%{
+			-webkit-transform:scale(1);
+			transform:scale(1)
+	}
+	50%{
+			-webkit-transform:scale(1.1);
+			transform:scale(1.1)
+	}
+}
+.logo{
+	-webkit-animation:pulsing 8s ease infinite;
+	animation:pulsing 8s ease infinite;
+	width:100%;
+	height:calc(100% / 2.816552901023891);
+	max-width:350px
+}
+.em-breve{
+	font-size:22px;
+	color:#fff;
+	margin-top:60px
+}
+.email{
+	height:50px;
+	margin-top: 5px;
+	font-size:14px;
+	white-space:nowrap;
+	word-break:keep-all;
+	text-align:center
+}
+.emaillink{
+	text-decoration:none;
+	color: #fff;
+}
