@@ -49,13 +49,11 @@ body {
   padding: 0;
   margin-top: -30px;
 }
-.container .wrapper .header .price h1 {
-  color: #2d2d2d;
+.price  {
+  color: #2ecc71;
   font-size: 1.65em;
   text-align: left;
   font-weight: bold;
-  
-  
 }
 .container .wrapper .header .heart-wrap {
   position: relative;
@@ -85,7 +83,7 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 15px 80px;
   border-radius: 50px;
   cursor: pointer;
