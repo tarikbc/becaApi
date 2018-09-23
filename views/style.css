@@ -80,13 +80,14 @@ body {
 }
 .container .wrapper .info .buyBtn {
   margin-top: 20px;
-  height: 110px;
-  width: 360px;
+  height: 150px;
+  width: 80%;
   cursor: pointer;
   transition: 300ms;
   background-image: url(http://www.hustlermoneyblog.com/wp-content/uploads/2015/11/Visa-Checkout-Image.png);
   background-size:100%;
   background-repeat: no-repeat;
+  background-color: white;
 }
 .container .wrapper .info .buyBtn:hover {
   transition: 300ms;
@@ -103,12 +104,12 @@ body {
    }
    .container .wrapper .info .buyBtn {
      margin-top: 20px;
-     height: 110px;
-     width: 90%;
+     height: 150px;
      cursor: pointer;
      transition: 300ms;
      background-image: url(http://www.hustlermoneyblog.com/wp-content/uploads/2015/11/Visa-Checkout-Image.png);
      background-size: 100%;
      background-repeat: no-repeat;
+     background-color: white;
    }
  }
