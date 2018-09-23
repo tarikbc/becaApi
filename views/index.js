@@ -1,4 +1,5 @@
 const baseApi = "https://beca.ml/api"
+document.getElementById('buyer-input').focus()
 function enviar(product, price){
 
     var buyer = document.getElementById('buyer-input').value
@@ -6,7 +7,7 @@ function enviar(product, price){
     if(buyer === ''){
         swal(
             'Ops!',
-            'Preencha o seu nome',
+            'Preencha o seu nome acima.',
             'error'
         )
         return
