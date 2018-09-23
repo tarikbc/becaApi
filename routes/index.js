@@ -6,7 +6,6 @@ const router = express.Router()
 const drone = new Scaledrone('ywbv2UbC8lPdqaH9');
 const moment = require('moment')
 
-
 const room = drone.subscribe('observable-beca');
 
 room.on('open', (error) => {
@@ -48,7 +47,7 @@ router.post('/api/buy', function (request, response, next) {
       type: 'input',
       title: `${request.body.product} - ${request.body.buyer}`,
       date: moment().format('DD/MM/YYYY hh:mm'),
-      value: request.body.price
+      value: request.body.value
     }
   })
   response.send({

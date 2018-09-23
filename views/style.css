@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #0000ff;
+}
+
+img {
+  max-width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to left, #FCFCFC, #EFEFEF);
+}
+
+.container {
+  position: relative;
+  background: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 50px;
+  border-radius: 20px;
+}
+.container .wrapper {
+  margin: 0;
+}
+.container .wrapper .header {
+  padding: 0;
+  margin-top: -30px;
+}
+.container .wrapper .header .price h1 {
+  color: #2d2d2d;
+  font-size: 1.65em;
+  text-align: left;
+  font-weight: bold;
+  
+  
+}
+.container .wrapper .header .heart-wrap {
+  position: relative;
+  right: 0;
+  left: 0;
+  margin-top: -30px;
+  text-align: right;
+}
+.container .wrapper .header .heart-wrap i.heart:after {
+  text-align: right;
+  content: "\f004";
+  color: #FF1312;
+  font-size: 1.8em;
+}
+.container .wrapper .info {
+  padding: 0;
+}
+.container .wrapper .info .title h1 {
+  color: #2d2d2d;
+  font-size: 1.5em;
+  margin-top: 15px;
+  padding: 10px;
+}
+.container .wrapper .info .buyBtn {
+  background: #9065fc;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding: 15px 80px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.container .wrapper .info .buyBtn:hover {
+  background: #9065fc;
+  color: white;
+  transition: 300ms;
+  opacity: 0.9;
+}
+
+ .container .wrapper{
+   padding-top: 15px;
+ }
